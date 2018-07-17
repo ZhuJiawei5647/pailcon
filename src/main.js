@@ -11,7 +11,16 @@ import {
 	Form,
 	FormItem,
 	Input,
-	Button
+	Button,
+	Table,
+	TableColumn,
+	Popover,
+	Loading,
+	Message,
+	Menu,
+	Submenu,
+	MenuItem,
+	MenuItemGroup
 } from 'element-ui';
 import router from './router'
 import axios from 'axios'
@@ -26,8 +35,18 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
 Vue.use(Button)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Popover)
+Vue.use(Menu),
+Vue.use(Submenu),
+Vue.use(MenuItem),
+Vue.use(MenuItemGroup)
+
+Vue.use(Loading.directive)
 
 Vue.prototype.$axios = axios
+Vue.prototype.$message = Message
 
 /* eslint-disable no-new */
 new Vue({
